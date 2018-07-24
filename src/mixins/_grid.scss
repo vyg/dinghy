@@ -11,36 +11,36 @@
     $infix: breakpoint-infix($breakpoint, $breakpoints);
 
     @for $i from 1 through $columns {
-      .col#{$infix}-#{$i} {
+      .#{$infix}col-#{$i} {
         @extend %grid-column;
       }
     }
 
-    .col#{$infix} {
+    .#{$infix}col {
       @extend %grid-column;
     }
 
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       // Provide basic `.col-{bp}` classes for equal-width flexbox columns
-      .col#{$infix} {
+      .#{$infix}col {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
       }
-      .col#{$infix}-auto {
+      .#{$infix}col-auto {
         flex: 0 0 auto;
         width: auto;
       }
 
       @for $i from 1 through $columns {
-        .col#{$infix}-#{$i} {
+        .#{$infix}col-#{$i} {
           @include make-col($i, $columns);
         }
       }
 
       @each $modifier in (pull, push) {
         @for $i from 0 through $columns {
-          .#{$modifier}#{$infix}-#{$i} {
+          .#{$infix}#{$modifier}-#{$i} {
             @include make-col-modifier($modifier, $i, $columns)
           }
         }
@@ -49,7 +49,7 @@
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
         @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-xs-0
-          .offset#{$infix}-#{$i} {
+          .#{$infix}offset-#{$i} {
             @include make-col-modifier(offset, $i, $columns)
           }
         }

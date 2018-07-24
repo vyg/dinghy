@@ -4,7 +4,6 @@
 }
 
 .container-fluid {
-  max-width: 1165px;
   @include make-container();
 }
 
@@ -12,41 +11,41 @@
   @include make-row();
 }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-
-.xs-row-no-gutters {
-  @include media-breakpoint-up(sm) {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-.xs-down-no-gutters {
-  @include media-breakpoint-down(xs) {
-    &.col,
-    &[class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-}
-
-.col-no-gutter {
-  &.col,
-  &[class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 @include make-grid-columns();
+
+// .no-gutters {
+//   margin-right: 0;
+//   margin-left: 0;
+
+//   > .col,
+//   > [class*="col-"] {
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+// }
+
+
+// .xs-row-no-gutters {
+//   @include media-breakpoint-up(sm) {
+//     margin-right: 0;
+//     margin-left: 0;
+//   }
+// }
+
+// .xs-down-no-gutters {
+//   @include media-breakpoint-down(xs) {
+//     &.col,
+//     &[class*="col-"] {
+//       padding-right: 0;
+//       padding-left: 0;
+//     }
+//   }
+// }
+
+// .col-no-gutter {
+//   &.col,
+//   &[class*="col-"] {
+//     padding-right: 0;
+//     padding-left: 0;
+//   }
+// }
