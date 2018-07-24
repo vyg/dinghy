@@ -5,7 +5,7 @@ $breakpoints: (
   sm: 48em,  //768px
   md: 64em,  //1024px
   lg: 74em
-);
+) !default;
 
 // Max widths
 $max-widths-on: false !default;
@@ -14,7 +14,7 @@ $container-max-widths: (
   sm: 40em,
   md: 48em,
   lg: 72em
-);
+) !default;
 
 $grid-columns: 12 !default;
 $grid-gutter-width-base: 30px !default;
@@ -27,24 +27,26 @@ $grid-gutter-widths: (
 ) !default;
 
 // Loop Counts
-$margin-count: 10; //Generates margin classes 0.5rem increments
-$padding-count: 10; //Generates padding classes in 0.5rem increments
-$layout-count: 25; //Generates height/width classes in 0.5rem increments
+$margin-count: 10 !default; //Generates margin classes 0.5rem increments
+$padding-count: 10 !default; //Generates padding classes in 0.5rem increments
+$layout-count: 25 !default; //Generates height/width classes in 0.5rem increments
 
 // Fonts
 $font-sizes: (
+  headline: 6rem,
+  byline: 5rem,
   f1: 3rem,
   f2: 2.25rem,
   f3: 1.5rem,
   f4: 1.25rem,
   f5: 1rem,
   f6: 0.875rem
-);
+) !default;
 
 $line-heights: (
   base: 1,
   body: 1.25,
   title: 1.5
-);
+) !default;
 
 // Colours

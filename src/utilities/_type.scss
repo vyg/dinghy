@@ -8,6 +8,16 @@
   @each $class, $value in $font-sizes {
     .#{$class} { font-size: $value; }
   }
+
+  @if (variable-exists(breakpoints)) {
+    @each $bp-name, $bp-value in $breakpoints {
+      @media (min-width: $bp-value) {
+        @each $class, $value in $font-sizes {
+          .#{$bp-name}\:#{$class} { font-size: $value; }
+        }
+      }
+    }
+  }
 }
 
 h1 { @extend .f1; }
