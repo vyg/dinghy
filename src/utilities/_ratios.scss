@@ -1,0 +1,78 @@
+/**
+ * Helper for making sure objects conform to a certain aspect ratio
+ *
+ * Example:
+ * <div class="aspect-ratio ratio--16x9">
+ *  <iframe class="aspect-ratio--object"></iframe>
+ * </div>
+ *
+ */
+.aspect-ratio {
+    height: 0;
+    position: relative;
+}
+
+/**
+ * Add a helper class to the aspect ratio
+ * So can apply where we don't have access
+ * to the class of the child
+ */
+.aspect-ratio--child:first-child,
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+@mixin aspect-ratio($ratio: 1 1) {
+    padding-bottom: percentage(nth($ratio, 2) / nth($ratio, 1));
+}
+
+@each $ratio, $ratio-value in $ratios {
+    .ratio--#{$ratio} {
+        @include aspect-ratio($ratio-value);
+    }
+}
+
+@if (variable-exists(breakpoints)) {
+    @each $bp-name, $bp-value in $breakpoints {
+        @media (min-width: $bp-value) {
+            @each $ratio, $ratio-value in $ratios {
+                .#{$bp-name}\:ratio--#{$ratio} {
+                    @include aspect-ratio($ratio-value);
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Image Sizes
+ * Handy helpers for creating set width/height squares
+ * Great for icons/avatars that don't need to be fluid
+ * For fluid use .ratio-1x1
+ */
+@each $dimension in $image-dimensions {
+    .is-#{$dimension}x#{$dimension} {
+        height: $dimension * 1px;
+        width: $dimension * 1px;
+    }
+}
+
+@if (variable-exists(breakpoints)) {
+    @each $bp-name, $bp-value in $breakpoints {
+        @media (min-width: $bp-value) {
+            @each $dimension in $image-dimensions {
+                .#{$bp-name}\:is-#{$dimension}x#{$dimension} {
+                    height: $dimension * 1px;
+                    width: $dimension * 1px;
+                }
+            }
+        }
+    }
+}

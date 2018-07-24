@@ -4687,4 +4687,356 @@
   position: absolute;
 }
 
+/**
+ * Helper for making sure objects conform to a certain aspect ratio
+ *
+ * Example:
+ * <div class="aspect-ratio ratio--16x9">
+ *  <iframe class="aspect-ratio--object"></iframe>
+ * </div>
+ *
+ */
+.aspect-ratio {
+  height: 0;
+  position: relative;
+}
+
+/**
+ * Add a helper class to the aspect ratio
+ * So can apply where we don't have access
+ * to the class of the child
+ */
+.aspect-ratio--child:first-child,
+.aspect-ratio--object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.ratio--1 {
+  padding-bottom: 100%;
+}
+
+.ratio--3x4 {
+  padding-bottom: 133.33333%;
+}
+
+.ratio--4x3 {
+  padding-bottom: 75%;
+}
+
+.ratio--6x4 {
+  padding-bottom: 66.66667%;
+}
+
+.ratio--4x6 {
+  padding-bottom: 150%;
+}
+
+.ratio--8x5 {
+  padding-bottom: 62.5%;
+}
+
+.ratio--5x8 {
+  padding-bottom: 160%;
+}
+
+.ratio--16x9 {
+  padding-bottom: 56.25%;
+}
+
+.ratio--9x16 {
+  padding-bottom: 177.77778%;
+}
+
+@media (min-width: 32em) {
+  .xs\:ratio--1 {
+    padding-bottom: 100%;
+  }
+  .xs\:ratio--3x4 {
+    padding-bottom: 133.33333%;
+  }
+  .xs\:ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .xs\:ratio--6x4 {
+    padding-bottom: 66.66667%;
+  }
+  .xs\:ratio--4x6 {
+    padding-bottom: 150%;
+  }
+  .xs\:ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .xs\:ratio--5x8 {
+    padding-bottom: 160%;
+  }
+  .xs\:ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .xs\:ratio--9x16 {
+    padding-bottom: 177.77778%;
+  }
+}
+
+@media (min-width: 48em) {
+  .sm\:ratio--1 {
+    padding-bottom: 100%;
+  }
+  .sm\:ratio--3x4 {
+    padding-bottom: 133.33333%;
+  }
+  .sm\:ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .sm\:ratio--6x4 {
+    padding-bottom: 66.66667%;
+  }
+  .sm\:ratio--4x6 {
+    padding-bottom: 150%;
+  }
+  .sm\:ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .sm\:ratio--5x8 {
+    padding-bottom: 160%;
+  }
+  .sm\:ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .sm\:ratio--9x16 {
+    padding-bottom: 177.77778%;
+  }
+}
+
+@media (min-width: 64em) {
+  .md\:ratio--1 {
+    padding-bottom: 100%;
+  }
+  .md\:ratio--3x4 {
+    padding-bottom: 133.33333%;
+  }
+  .md\:ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .md\:ratio--6x4 {
+    padding-bottom: 66.66667%;
+  }
+  .md\:ratio--4x6 {
+    padding-bottom: 150%;
+  }
+  .md\:ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .md\:ratio--5x8 {
+    padding-bottom: 160%;
+  }
+  .md\:ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .md\:ratio--9x16 {
+    padding-bottom: 177.77778%;
+  }
+}
+
+@media (min-width: 74em) {
+  .lg\:ratio--1 {
+    padding-bottom: 100%;
+  }
+  .lg\:ratio--3x4 {
+    padding-bottom: 133.33333%;
+  }
+  .lg\:ratio--4x3 {
+    padding-bottom: 75%;
+  }
+  .lg\:ratio--6x4 {
+    padding-bottom: 66.66667%;
+  }
+  .lg\:ratio--4x6 {
+    padding-bottom: 150%;
+  }
+  .lg\:ratio--8x5 {
+    padding-bottom: 62.5%;
+  }
+  .lg\:ratio--5x8 {
+    padding-bottom: 160%;
+  }
+  .lg\:ratio--16x9 {
+    padding-bottom: 56.25%;
+  }
+  .lg\:ratio--9x16 {
+    padding-bottom: 177.77778%;
+  }
+}
+
+/**
+ * Image Sizes
+ * Handy helpers for creating set width/height squares
+ * Great for icons/avatars that don't need to be fluid
+ * For fluid use .ratio-1x1
+ */
+.is-16x16 {
+  height: 16px;
+  width: 16px;
+}
+
+.is-24x24 {
+  height: 24px;
+  width: 24px;
+}
+
+.is-32x32 {
+  height: 32px;
+  width: 32px;
+}
+
+.is-48x48 {
+  height: 48px;
+  width: 48px;
+}
+
+.is-64x64 {
+  height: 64px;
+  width: 64px;
+}
+
+.is-96x96 {
+  height: 96px;
+  width: 96px;
+}
+
+.is-128x128 {
+  height: 128px;
+  width: 128px;
+}
+
+@media (min-width: 32em) {
+  .xs\:is-16x16 {
+    height: 16px;
+    width: 16px;
+  }
+  .xs\:is-24x24 {
+    height: 24px;
+    width: 24px;
+  }
+  .xs\:is-32x32 {
+    height: 32px;
+    width: 32px;
+  }
+  .xs\:is-48x48 {
+    height: 48px;
+    width: 48px;
+  }
+  .xs\:is-64x64 {
+    height: 64px;
+    width: 64px;
+  }
+  .xs\:is-96x96 {
+    height: 96px;
+    width: 96px;
+  }
+  .xs\:is-128x128 {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+@media (min-width: 48em) {
+  .sm\:is-16x16 {
+    height: 16px;
+    width: 16px;
+  }
+  .sm\:is-24x24 {
+    height: 24px;
+    width: 24px;
+  }
+  .sm\:is-32x32 {
+    height: 32px;
+    width: 32px;
+  }
+  .sm\:is-48x48 {
+    height: 48px;
+    width: 48px;
+  }
+  .sm\:is-64x64 {
+    height: 64px;
+    width: 64px;
+  }
+  .sm\:is-96x96 {
+    height: 96px;
+    width: 96px;
+  }
+  .sm\:is-128x128 {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+@media (min-width: 64em) {
+  .md\:is-16x16 {
+    height: 16px;
+    width: 16px;
+  }
+  .md\:is-24x24 {
+    height: 24px;
+    width: 24px;
+  }
+  .md\:is-32x32 {
+    height: 32px;
+    width: 32px;
+  }
+  .md\:is-48x48 {
+    height: 48px;
+    width: 48px;
+  }
+  .md\:is-64x64 {
+    height: 64px;
+    width: 64px;
+  }
+  .md\:is-96x96 {
+    height: 96px;
+    width: 96px;
+  }
+  .md\:is-128x128 {
+    height: 128px;
+    width: 128px;
+  }
+}
+
+@media (min-width: 74em) {
+  .lg\:is-16x16 {
+    height: 16px;
+    width: 16px;
+  }
+  .lg\:is-24x24 {
+    height: 24px;
+    width: 24px;
+  }
+  .lg\:is-32x32 {
+    height: 32px;
+    width: 32px;
+  }
+  .lg\:is-48x48 {
+    height: 48px;
+    width: 48px;
+  }
+  .lg\:is-64x64 {
+    height: 64px;
+    width: 64px;
+  }
+  .lg\:is-96x96 {
+    height: 96px;
+    width: 96px;
+  }
+  .lg\:is-128x128 {
+    height: 128px;
+    width: 128px;
+  }
+}
+
 /*# sourceMappingURL=dinghy.css.map */
