@@ -4,7 +4,11 @@
     "description": "Functional CSS framework",
     "repository": "ohararyan/dinghy",
     "license": "MIT",
-    "author": "Ryan O'Hara <ryan@voyage.studio> (http://voyage.studio)",
+	"author": {
+		"name": "Ryan O'Hara",
+		"email": "ryan@voyage.studio",
+		"url": "voyage.studio"
+	},
     "main": "dist/dinghy.css",
     "keywords": [],
     "bugs": {
@@ -15,10 +19,12 @@
     },
     "devDependencies": {
         "autoprefixer": "^9.0.1",
-        "node-sass": "^4.9.2"
+        "node-sass": "^4.9.2",
+        "np": "^3.0.4"
     },
     "scripts": {
-        "build": "node-sass --output-style expanded --source-map true src/styles.scss dist/dinghy.css  && node-sass --output-style compressed src/styles.scss dist/dinghy.min.css"
+        "build": "node-sass --output-style expanded --source-map true src/styles.scss dist/dinghy.css  && node-sass --output-style compressed src/styles.scss dist/dinghy.min.css",
+        "release": "np"
     },
     "dependencies": {
         "normalize.css": "^8.0.0"
