@@ -1,14 +1,14 @@
 {
     "name": "dinghy",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Functional CSS framework",
     "repository": "ohararyan/dinghy",
     "license": "MIT",
-	"author": {
-		"name": "Ryan O'Hara",
-		"email": "ryan@voyage.studio",
-		"url": "voyage.studio"
-	},
+    "author": {
+        "name": "Ryan O'Hara",
+        "email": "ryan@voyage.studio",
+        "url": "voyage.studio"
+    },
     "main": "dist/dinghy.css",
     "keywords": [],
     "bugs": {
