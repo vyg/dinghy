@@ -1,10 +1,11 @@
 
 // Breakpoints
 $breakpoints: (
-  xs: 32em,
-  sm: 48em,  //768px
-  md: 64em,  //1024px
-  lg: 74em
+  xs: 0em,
+  sm: 32em,  //512px
+  md: 48em,  //768px
+  lg: 64em,  //1024px
+  xl: 70em   //1280px
 ) !default;
 
 // Max widths
