@@ -380,151 +380,151 @@
 }
 
 @media (min-width: 0em) {
-  .xs-dn {
+  .xs\:dn {
     display: none;
   }
-  .xs-di {
+  .xs\:di {
     display: inline;
   }
-  .xs-db {
+  .xs\:db {
     display: block;
   }
-  .xs-dib {
+  .xs\:dib {
     display: inline-block;
   }
-  .xs-dt {
+  .xs\:dt {
     display: table;
   }
-  .xs-dtc {
+  .xs\:dtc {
     display: table-cell;
   }
-  .xs-df {
+  .xs\:df {
     display: flex;
   }
-  .xs-invisible {
+  .xs\:invisible {
     visibility: hidden;
   }
-  .xs-visible {
+  .xs\:visible {
     visibility: visible;
   }
 }
 
 @media (min-width: 32em) {
-  .sm-dn {
+  .sm\:dn {
     display: none;
   }
-  .sm-di {
+  .sm\:di {
     display: inline;
   }
-  .sm-db {
+  .sm\:db {
     display: block;
   }
-  .sm-dib {
+  .sm\:dib {
     display: inline-block;
   }
-  .sm-dt {
+  .sm\:dt {
     display: table;
   }
-  .sm-dtc {
+  .sm\:dtc {
     display: table-cell;
   }
-  .sm-df {
+  .sm\:df {
     display: flex;
   }
-  .sm-invisible {
+  .sm\:invisible {
     visibility: hidden;
   }
-  .sm-visible {
+  .sm\:visible {
     visibility: visible;
   }
 }
 
 @media (min-width: 48em) {
-  .md-dn {
+  .md\:dn {
     display: none;
   }
-  .md-di {
+  .md\:di {
     display: inline;
   }
-  .md-db {
+  .md\:db {
     display: block;
   }
-  .md-dib {
+  .md\:dib {
     display: inline-block;
   }
-  .md-dt {
+  .md\:dt {
     display: table;
   }
-  .md-dtc {
+  .md\:dtc {
     display: table-cell;
   }
-  .md-df {
+  .md\:df {
     display: flex;
   }
-  .md-invisible {
+  .md\:invisible {
     visibility: hidden;
   }
-  .md-visible {
+  .md\:visible {
     visibility: visible;
   }
 }
 
 @media (min-width: 64em) {
-  .lg-dn {
+  .lg\:dn {
     display: none;
   }
-  .lg-di {
+  .lg\:di {
     display: inline;
   }
-  .lg-db {
+  .lg\:db {
     display: block;
   }
-  .lg-dib {
+  .lg\:dib {
     display: inline-block;
   }
-  .lg-dt {
+  .lg\:dt {
     display: table;
   }
-  .lg-dtc {
+  .lg\:dtc {
     display: table-cell;
   }
-  .lg-df {
+  .lg\:df {
     display: flex;
   }
-  .lg-invisible {
+  .lg\:invisible {
     visibility: hidden;
   }
-  .lg-visible {
+  .lg\:visible {
     visibility: visible;
   }
 }
 
 @media (min-width: 70em) {
-  .xl-dn {
+  .xl\:dn {
     display: none;
   }
-  .xl-di {
+  .xl\:di {
     display: inline;
   }
-  .xl-db {
+  .xl\:db {
     display: block;
   }
-  .xl-dib {
+  .xl\:dib {
     display: inline-block;
   }
-  .xl-dt {
+  .xl\:dt {
     display: table;
   }
-  .xl-dtc {
+  .xl\:dtc {
     display: table-cell;
   }
-  .xl-df {
+  .xl\:df {
     display: flex;
   }
-  .xl-invisible {
+  .xl\:invisible {
     visibility: hidden;
   }
-  .xl-visible {
+  .xl\:visible {
     visibility: visible;
   }
 }
@@ -643,6 +643,46 @@
   flex: none;
 }
 
+.order--10 {
+  order: -10;
+}
+
+.order--9 {
+  order: -9;
+}
+
+.order--8 {
+  order: -8;
+}
+
+.order--7 {
+  order: -7;
+}
+
+.order--6 {
+  order: -6;
+}
+
+.order--5 {
+  order: -5;
+}
+
+.order--4 {
+  order: -4;
+}
+
+.order--3 {
+  order: -3;
+}
+
+.order--2 {
+  order: -2;
+}
+
+.order--1 {
+  order: -1;
+}
+
 .order-0 {
   order: 0;
 }
@@ -688,611 +728,761 @@
 }
 
 @media (min-width: 0em) {
-  .xs-flex {
+  .xs\:flex {
     display: flex;
   }
-  .xs-flex-none {
+  .xs\:flex-none {
     flex: none;
   }
-  .xs-flex-column {
+  .xs\:flex-column {
     flex-direction: column;
   }
-  .xs-flex-row {
+  .xs\:flex-row {
     flex-direction: row;
   }
-  .xs-flex-wrap {
+  .xs\:flex-wrap {
     flex-wrap: wrap;
   }
-  .xs-flex-nowrap {
+  .xs\:flex-nowrap {
     flex-wrap: nowrap;
   }
-  .xs-items-start {
+  .xs\:items-start {
     align-items: flex-start;
   }
-  .xs-items-end {
+  .xs\:items-end {
     align-items: flex-end;
   }
-  .xs-items-center {
+  .xs\:items-center {
     align-items: center;
   }
-  .xs-items-baseline {
+  .xs\:items-baseline {
     align-items: baseline;
   }
-  .xs-items-stretch {
+  .xs\:items-stretch {
     align-items: stretch;
   }
-  .xs-self-start {
+  .xs\:self-start {
     align-self: flex-start;
   }
-  .xs-self-end {
+  .xs\:self-end {
     align-self: flex-end;
   }
-  .xs-self-center {
+  .xs\:self-center {
     align-self: center;
   }
-  .xs-self-baseline {
+  .xs\:self-baseline {
     align-self: baseline;
   }
-  .xs-self-stretch {
+  .xs\:self-stretch {
     align-self: stretch;
   }
-  .xs-justify-start {
+  .xs\:justify-start {
     justify-content: flex-start;
   }
-  .xs-justify-end {
+  .xs\:justify-end {
     justify-content: flex-end;
   }
-  .xs-justify-center {
+  .xs\:justify-center {
     justify-content: center;
   }
-  .xs-justify-between {
+  .xs\:justify-between {
     justify-content: space-between;
   }
-  .xs-justify-around {
+  .xs\:justify-around {
     justify-content: space-around;
   }
-  .xs-content-start {
+  .xs\:content-start {
     align-content: flex-start;
   }
-  .xs-content-end {
+  .xs\:content-end {
     align-content: flex-end;
   }
-  .xs-content-center {
+  .xs\:content-center {
     align-content: center;
   }
-  .xs-content-between {
+  .xs\:content-between {
     align-content: space-between;
   }
-  .xs-content-around {
+  .xs\:content-around {
     align-content: space-around;
   }
-  .xs-content-stretch {
+  .xs\:content-stretch {
     align-content: stretch;
   }
-  .xs-flex-auto {
+  .xs\:flex-auto {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
   }
-  .xs-order-0 {
+  .xs\:order--10 {
+    order: -10;
+  }
+  .xs\:order--9 {
+    order: -9;
+  }
+  .xs\:order--8 {
+    order: -8;
+  }
+  .xs\:order--7 {
+    order: -7;
+  }
+  .xs\:order--6 {
+    order: -6;
+  }
+  .xs\:order--5 {
+    order: -5;
+  }
+  .xs\:order--4 {
+    order: -4;
+  }
+  .xs\:order--3 {
+    order: -3;
+  }
+  .xs\:order--2 {
+    order: -2;
+  }
+  .xs\:order--1 {
+    order: -1;
+  }
+  .xs\:order-0 {
     order: 0;
   }
-  .xs-order-1 {
+  .xs\:order-1 {
     order: 1;
   }
-  .xs-order-2 {
+  .xs\:order-2 {
     order: 2;
   }
-  .xs-order-3 {
+  .xs\:order-3 {
     order: 3;
   }
-  .xs-order-4 {
+  .xs\:order-4 {
     order: 4;
   }
-  .xs-order-5 {
+  .xs\:order-5 {
     order: 5;
   }
-  .xs-order-6 {
+  .xs\:order-6 {
     order: 6;
   }
-  .xs-order-7 {
+  .xs\:order-7 {
     order: 7;
   }
-  .xs-order-8 {
+  .xs\:order-8 {
     order: 8;
   }
-  .xs-order-9 {
+  .xs\:order-9 {
     order: 9;
   }
-  .xs-order-10 {
+  .xs\:order-10 {
     order: 10;
   }
 }
 
 @media (min-width: 32em) {
-  .sm-flex {
+  .sm\:flex {
     display: flex;
   }
-  .sm-flex-none {
+  .sm\:flex-none {
     flex: none;
   }
-  .sm-flex-column {
+  .sm\:flex-column {
     flex-direction: column;
   }
-  .sm-flex-row {
+  .sm\:flex-row {
     flex-direction: row;
   }
-  .sm-flex-wrap {
+  .sm\:flex-wrap {
     flex-wrap: wrap;
   }
-  .sm-flex-nowrap {
+  .sm\:flex-nowrap {
     flex-wrap: nowrap;
   }
-  .sm-items-start {
+  .sm\:items-start {
     align-items: flex-start;
   }
-  .sm-items-end {
+  .sm\:items-end {
     align-items: flex-end;
   }
-  .sm-items-center {
+  .sm\:items-center {
     align-items: center;
   }
-  .sm-items-baseline {
+  .sm\:items-baseline {
     align-items: baseline;
   }
-  .sm-items-stretch {
+  .sm\:items-stretch {
     align-items: stretch;
   }
-  .sm-self-start {
+  .sm\:self-start {
     align-self: flex-start;
   }
-  .sm-self-end {
+  .sm\:self-end {
     align-self: flex-end;
   }
-  .sm-self-center {
+  .sm\:self-center {
     align-self: center;
   }
-  .sm-self-baseline {
+  .sm\:self-baseline {
     align-self: baseline;
   }
-  .sm-self-stretch {
+  .sm\:self-stretch {
     align-self: stretch;
   }
-  .sm-justify-start {
+  .sm\:justify-start {
     justify-content: flex-start;
   }
-  .sm-justify-end {
+  .sm\:justify-end {
     justify-content: flex-end;
   }
-  .sm-justify-center {
+  .sm\:justify-center {
     justify-content: center;
   }
-  .sm-justify-between {
+  .sm\:justify-between {
     justify-content: space-between;
   }
-  .sm-justify-around {
+  .sm\:justify-around {
     justify-content: space-around;
   }
-  .sm-content-start {
+  .sm\:content-start {
     align-content: flex-start;
   }
-  .sm-content-end {
+  .sm\:content-end {
     align-content: flex-end;
   }
-  .sm-content-center {
+  .sm\:content-center {
     align-content: center;
   }
-  .sm-content-between {
+  .sm\:content-between {
     align-content: space-between;
   }
-  .sm-content-around {
+  .sm\:content-around {
     align-content: space-around;
   }
-  .sm-content-stretch {
+  .sm\:content-stretch {
     align-content: stretch;
   }
-  .sm-flex-auto {
+  .sm\:flex-auto {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
   }
-  .sm-order-0 {
+  .sm\:order--10 {
+    order: -10;
+  }
+  .sm\:order--9 {
+    order: -9;
+  }
+  .sm\:order--8 {
+    order: -8;
+  }
+  .sm\:order--7 {
+    order: -7;
+  }
+  .sm\:order--6 {
+    order: -6;
+  }
+  .sm\:order--5 {
+    order: -5;
+  }
+  .sm\:order--4 {
+    order: -4;
+  }
+  .sm\:order--3 {
+    order: -3;
+  }
+  .sm\:order--2 {
+    order: -2;
+  }
+  .sm\:order--1 {
+    order: -1;
+  }
+  .sm\:order-0 {
     order: 0;
   }
-  .sm-order-1 {
+  .sm\:order-1 {
     order: 1;
   }
-  .sm-order-2 {
+  .sm\:order-2 {
     order: 2;
   }
-  .sm-order-3 {
+  .sm\:order-3 {
     order: 3;
   }
-  .sm-order-4 {
+  .sm\:order-4 {
     order: 4;
   }
-  .sm-order-5 {
+  .sm\:order-5 {
     order: 5;
   }
-  .sm-order-6 {
+  .sm\:order-6 {
     order: 6;
   }
-  .sm-order-7 {
+  .sm\:order-7 {
     order: 7;
   }
-  .sm-order-8 {
+  .sm\:order-8 {
     order: 8;
   }
-  .sm-order-9 {
+  .sm\:order-9 {
     order: 9;
   }
-  .sm-order-10 {
+  .sm\:order-10 {
     order: 10;
   }
 }
 
 @media (min-width: 48em) {
-  .md-flex {
+  .md\:flex {
     display: flex;
   }
-  .md-flex-none {
+  .md\:flex-none {
     flex: none;
   }
-  .md-flex-column {
+  .md\:flex-column {
     flex-direction: column;
   }
-  .md-flex-row {
+  .md\:flex-row {
     flex-direction: row;
   }
-  .md-flex-wrap {
+  .md\:flex-wrap {
     flex-wrap: wrap;
   }
-  .md-flex-nowrap {
+  .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
-  .md-items-start {
+  .md\:items-start {
     align-items: flex-start;
   }
-  .md-items-end {
+  .md\:items-end {
     align-items: flex-end;
   }
-  .md-items-center {
+  .md\:items-center {
     align-items: center;
   }
-  .md-items-baseline {
+  .md\:items-baseline {
     align-items: baseline;
   }
-  .md-items-stretch {
+  .md\:items-stretch {
     align-items: stretch;
   }
-  .md-self-start {
+  .md\:self-start {
     align-self: flex-start;
   }
-  .md-self-end {
+  .md\:self-end {
     align-self: flex-end;
   }
-  .md-self-center {
+  .md\:self-center {
     align-self: center;
   }
-  .md-self-baseline {
+  .md\:self-baseline {
     align-self: baseline;
   }
-  .md-self-stretch {
+  .md\:self-stretch {
     align-self: stretch;
   }
-  .md-justify-start {
+  .md\:justify-start {
     justify-content: flex-start;
   }
-  .md-justify-end {
+  .md\:justify-end {
     justify-content: flex-end;
   }
-  .md-justify-center {
+  .md\:justify-center {
     justify-content: center;
   }
-  .md-justify-between {
+  .md\:justify-between {
     justify-content: space-between;
   }
-  .md-justify-around {
+  .md\:justify-around {
     justify-content: space-around;
   }
-  .md-content-start {
+  .md\:content-start {
     align-content: flex-start;
   }
-  .md-content-end {
+  .md\:content-end {
     align-content: flex-end;
   }
-  .md-content-center {
+  .md\:content-center {
     align-content: center;
   }
-  .md-content-between {
+  .md\:content-between {
     align-content: space-between;
   }
-  .md-content-around {
+  .md\:content-around {
     align-content: space-around;
   }
-  .md-content-stretch {
+  .md\:content-stretch {
     align-content: stretch;
   }
-  .md-flex-auto {
+  .md\:flex-auto {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
   }
-  .md-order-0 {
+  .md\:order--10 {
+    order: -10;
+  }
+  .md\:order--9 {
+    order: -9;
+  }
+  .md\:order--8 {
+    order: -8;
+  }
+  .md\:order--7 {
+    order: -7;
+  }
+  .md\:order--6 {
+    order: -6;
+  }
+  .md\:order--5 {
+    order: -5;
+  }
+  .md\:order--4 {
+    order: -4;
+  }
+  .md\:order--3 {
+    order: -3;
+  }
+  .md\:order--2 {
+    order: -2;
+  }
+  .md\:order--1 {
+    order: -1;
+  }
+  .md\:order-0 {
     order: 0;
   }
-  .md-order-1 {
+  .md\:order-1 {
     order: 1;
   }
-  .md-order-2 {
+  .md\:order-2 {
     order: 2;
   }
-  .md-order-3 {
+  .md\:order-3 {
     order: 3;
   }
-  .md-order-4 {
+  .md\:order-4 {
     order: 4;
   }
-  .md-order-5 {
+  .md\:order-5 {
     order: 5;
   }
-  .md-order-6 {
+  .md\:order-6 {
     order: 6;
   }
-  .md-order-7 {
+  .md\:order-7 {
     order: 7;
   }
-  .md-order-8 {
+  .md\:order-8 {
     order: 8;
   }
-  .md-order-9 {
+  .md\:order-9 {
     order: 9;
   }
-  .md-order-10 {
+  .md\:order-10 {
     order: 10;
   }
 }
 
 @media (min-width: 64em) {
-  .lg-flex {
+  .lg\:flex {
     display: flex;
   }
-  .lg-flex-none {
+  .lg\:flex-none {
     flex: none;
   }
-  .lg-flex-column {
+  .lg\:flex-column {
     flex-direction: column;
   }
-  .lg-flex-row {
+  .lg\:flex-row {
     flex-direction: row;
   }
-  .lg-flex-wrap {
+  .lg\:flex-wrap {
     flex-wrap: wrap;
   }
-  .lg-flex-nowrap {
+  .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
-  .lg-items-start {
+  .lg\:items-start {
     align-items: flex-start;
   }
-  .lg-items-end {
+  .lg\:items-end {
     align-items: flex-end;
   }
-  .lg-items-center {
+  .lg\:items-center {
     align-items: center;
   }
-  .lg-items-baseline {
+  .lg\:items-baseline {
     align-items: baseline;
   }
-  .lg-items-stretch {
+  .lg\:items-stretch {
     align-items: stretch;
   }
-  .lg-self-start {
+  .lg\:self-start {
     align-self: flex-start;
   }
-  .lg-self-end {
+  .lg\:self-end {
     align-self: flex-end;
   }
-  .lg-self-center {
+  .lg\:self-center {
     align-self: center;
   }
-  .lg-self-baseline {
+  .lg\:self-baseline {
     align-self: baseline;
   }
-  .lg-self-stretch {
+  .lg\:self-stretch {
     align-self: stretch;
   }
-  .lg-justify-start {
+  .lg\:justify-start {
     justify-content: flex-start;
   }
-  .lg-justify-end {
+  .lg\:justify-end {
     justify-content: flex-end;
   }
-  .lg-justify-center {
+  .lg\:justify-center {
     justify-content: center;
   }
-  .lg-justify-between {
+  .lg\:justify-between {
     justify-content: space-between;
   }
-  .lg-justify-around {
+  .lg\:justify-around {
     justify-content: space-around;
   }
-  .lg-content-start {
+  .lg\:content-start {
     align-content: flex-start;
   }
-  .lg-content-end {
+  .lg\:content-end {
     align-content: flex-end;
   }
-  .lg-content-center {
+  .lg\:content-center {
     align-content: center;
   }
-  .lg-content-between {
+  .lg\:content-between {
     align-content: space-between;
   }
-  .lg-content-around {
+  .lg\:content-around {
     align-content: space-around;
   }
-  .lg-content-stretch {
+  .lg\:content-stretch {
     align-content: stretch;
   }
-  .lg-flex-auto {
+  .lg\:flex-auto {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
   }
-  .lg-order-0 {
+  .lg\:order--10 {
+    order: -10;
+  }
+  .lg\:order--9 {
+    order: -9;
+  }
+  .lg\:order--8 {
+    order: -8;
+  }
+  .lg\:order--7 {
+    order: -7;
+  }
+  .lg\:order--6 {
+    order: -6;
+  }
+  .lg\:order--5 {
+    order: -5;
+  }
+  .lg\:order--4 {
+    order: -4;
+  }
+  .lg\:order--3 {
+    order: -3;
+  }
+  .lg\:order--2 {
+    order: -2;
+  }
+  .lg\:order--1 {
+    order: -1;
+  }
+  .lg\:order-0 {
     order: 0;
   }
-  .lg-order-1 {
+  .lg\:order-1 {
     order: 1;
   }
-  .lg-order-2 {
+  .lg\:order-2 {
     order: 2;
   }
-  .lg-order-3 {
+  .lg\:order-3 {
     order: 3;
   }
-  .lg-order-4 {
+  .lg\:order-4 {
     order: 4;
   }
-  .lg-order-5 {
+  .lg\:order-5 {
     order: 5;
   }
-  .lg-order-6 {
+  .lg\:order-6 {
     order: 6;
   }
-  .lg-order-7 {
+  .lg\:order-7 {
     order: 7;
   }
-  .lg-order-8 {
+  .lg\:order-8 {
     order: 8;
   }
-  .lg-order-9 {
+  .lg\:order-9 {
     order: 9;
   }
-  .lg-order-10 {
+  .lg\:order-10 {
     order: 10;
   }
 }
 
 @media (min-width: 70em) {
-  .xl-flex {
+  .xl\:flex {
     display: flex;
   }
-  .xl-flex-none {
+  .xl\:flex-none {
     flex: none;
   }
-  .xl-flex-column {
+  .xl\:flex-column {
     flex-direction: column;
   }
-  .xl-flex-row {
+  .xl\:flex-row {
     flex-direction: row;
   }
-  .xl-flex-wrap {
+  .xl\:flex-wrap {
     flex-wrap: wrap;
   }
-  .xl-flex-nowrap {
+  .xl\:flex-nowrap {
     flex-wrap: nowrap;
   }
-  .xl-items-start {
+  .xl\:items-start {
     align-items: flex-start;
   }
-  .xl-items-end {
+  .xl\:items-end {
     align-items: flex-end;
   }
-  .xl-items-center {
+  .xl\:items-center {
     align-items: center;
   }
-  .xl-items-baseline {
+  .xl\:items-baseline {
     align-items: baseline;
   }
-  .xl-items-stretch {
+  .xl\:items-stretch {
     align-items: stretch;
   }
-  .xl-self-start {
+  .xl\:self-start {
     align-self: flex-start;
   }
-  .xl-self-end {
+  .xl\:self-end {
     align-self: flex-end;
   }
-  .xl-self-center {
+  .xl\:self-center {
     align-self: center;
   }
-  .xl-self-baseline {
+  .xl\:self-baseline {
     align-self: baseline;
   }
-  .xl-self-stretch {
+  .xl\:self-stretch {
     align-self: stretch;
   }
-  .xl-justify-start {
+  .xl\:justify-start {
     justify-content: flex-start;
   }
-  .xl-justify-end {
+  .xl\:justify-end {
     justify-content: flex-end;
   }
-  .xl-justify-center {
+  .xl\:justify-center {
     justify-content: center;
   }
-  .xl-justify-between {
+  .xl\:justify-between {
     justify-content: space-between;
   }
-  .xl-justify-around {
+  .xl\:justify-around {
     justify-content: space-around;
   }
-  .xl-content-start {
+  .xl\:content-start {
     align-content: flex-start;
   }
-  .xl-content-end {
+  .xl\:content-end {
     align-content: flex-end;
   }
-  .xl-content-center {
+  .xl\:content-center {
     align-content: center;
   }
-  .xl-content-between {
+  .xl\:content-between {
     align-content: space-between;
   }
-  .xl-content-around {
+  .xl\:content-around {
     align-content: space-around;
   }
-  .xl-content-stretch {
+  .xl\:content-stretch {
     align-content: stretch;
   }
-  .xl-flex-auto {
+  .xl\:flex-auto {
     flex: 1 1 auto;
     min-height: 0;
     min-width: 0;
   }
-  .xl-order-0 {
+  .xl\:order--10 {
+    order: -10;
+  }
+  .xl\:order--9 {
+    order: -9;
+  }
+  .xl\:order--8 {
+    order: -8;
+  }
+  .xl\:order--7 {
+    order: -7;
+  }
+  .xl\:order--6 {
+    order: -6;
+  }
+  .xl\:order--5 {
+    order: -5;
+  }
+  .xl\:order--4 {
+    order: -4;
+  }
+  .xl\:order--3 {
+    order: -3;
+  }
+  .xl\:order--2 {
+    order: -2;
+  }
+  .xl\:order--1 {
+    order: -1;
+  }
+  .xl\:order-0 {
     order: 0;
   }
-  .xl-order-1 {
+  .xl\:order-1 {
     order: 1;
   }
-  .xl-order-2 {
+  .xl\:order-2 {
     order: 2;
   }
-  .xl-order-3 {
+  .xl\:order-3 {
     order: 3;
   }
-  .xl-order-4 {
+  .xl\:order-4 {
     order: 4;
   }
-  .xl-order-5 {
+  .xl\:order-5 {
     order: 5;
   }
-  .xl-order-6 {
+  .xl\:order-6 {
     order: 6;
   }
-  .xl-order-7 {
+  .xl\:order-7 {
     order: 7;
   }
-  .xl-order-8 {
+  .xl\:order-8 {
     order: 8;
   }
-  .xl-order-9 {
+  .xl\:order-9 {
     order: 9;
   }
-  .xl-order-10 {
+  .xl\:order-10 {
     order: 10;
   }
 }

@@ -20,15 +20,15 @@
 @if (variable-exists(breakpoints)) {
   @each $bp-name, $bp-value in $breakpoints {
     @media (min-width: $bp-value) {
-      .#{$bp-name}-dn { display: none; }
-  	  .#{$bp-name}-di { display: inline; }
-  	  .#{$bp-name}-db { display: block; }
-  	  .#{$bp-name}-dib { display: inline-block; }
-      .#{$bp-name}-dt { display: table; }
-      .#{$bp-name}-dtc { display: table-cell; }
-      .#{$bp-name}-df { display: flex }
-  	  .#{$bp-name}-invisible { visibility: hidden; }
-  	  .#{$bp-name}-visible { visibility: visible; }
+      .#{$bp-name}\:dn { display: none; }
+  	  .#{$bp-name}\:di { display: inline; }
+  	  .#{$bp-name}\:db { display: block; }
+  	  .#{$bp-name}\:dib { display: inline-block; }
+      .#{$bp-name}\:dt { display: table; }
+      .#{$bp-name}\:dtc { display: table-cell; }
+      .#{$bp-name}\:df { display: flex }
+  	  .#{$bp-name}\:invisible { visibility: hidden; }
+  	  .#{$bp-name}\:visible { visibility: visible; }
     }
   }
 }
