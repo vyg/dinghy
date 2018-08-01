@@ -41,9 +41,11 @@
 
 @if (variable-exists(breakpoints)) {
     @each $bp-name, $bp-value in $breakpoints {
+        $infix: breakpoint-infix($bp-name, $breakpoints);
+
         @media (min-width: $bp-value) {
             @each $ratio, $ratio-value in $ratios {
-                .#{$bp-name}\:ratio--#{$ratio} {
+                .#{$infix}ratio--#{$ratio} {
                     @include aspect-ratio($ratio-value);
                 }
             }
@@ -66,9 +68,11 @@
 
 @if (variable-exists(breakpoints)) {
     @each $bp-name, $bp-value in $breakpoints {
+        $infix: breakpoint-infix($bp-name, $breakpoints);
+
         @media (min-width: $bp-value) {
             @each $dimension in $image-dimensions {
-                .#{$bp-name}\:is-#{$dimension}x#{$dimension} {
+                .#{$infix}is-#{$dimension}x#{$dimension} {
                     height: $dimension * 1px;
                     width: $dimension * 1px;
                 }
