@@ -50,9 +50,7 @@ $line-heights: (
   title: 1.5
 ) !default;
 
-// Colours
-
-
+// Ratios
 $image-dimensions: 16 24 32 48 64 96 128 !default;
 $ratios: (
   1: 1 1,
@@ -65,3 +63,6 @@ $ratios: (
   16x9: 16 9,
   9x16: 9 16
 ) !default;
+
+// Colours
+$color-highlight: yellow !default;

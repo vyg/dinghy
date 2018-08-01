@@ -7,11 +7,11 @@
 .df { display: flex }
 
 .hide, .nonvisual-indicator {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 .invisible { visibility: hidden; }
@@ -19,16 +19,20 @@
 
 @if (variable-exists(breakpoints)) {
   @each $bp-name, $bp-value in $breakpoints {
-    @media (min-width: $bp-value) {
-      .#{$bp-name}\:dn { display: none; }
-  	  .#{$bp-name}\:di { display: inline; }
-  	  .#{$bp-name}\:db { display: block; }
-  	  .#{$bp-name}\:dib { display: inline-block; }
-      .#{$bp-name}\:dt { display: table; }
-      .#{$bp-name}\:dtc { display: table-cell; }
-      .#{$bp-name}\:df { display: flex }
-  	  .#{$bp-name}\:invisible { visibility: hidden; }
-  	  .#{$bp-name}\:visible { visibility: visible; }
+    $infix: breakpoint-infix($bp-name, $breakpoints);
+    
+    @if(breakpoint-min($bp-name, $breakpoints) != null) {
+      @media (min-width: $bp-value) {
+        .#{$infix}dn { display: none; }
+        .#{$infix}di { display: inline; }
+        .#{$infix}db { display: block; }
+        .#{$infix}dib { display: inline-block; }
+        .#{$infix}dt { display: table; }
+        .#{$infix}dtc { display: table-cell; }
+        .#{$infix}df { display: flex }
+        .#{$infix}invisible { visibility: hidden; }
+        .#{$infix}visible { visibility: visible; }
+      }
     }
   }
 }

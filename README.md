@@ -17,7 +17,9 @@
 
 ### Publishing
 
-* `yarn run release`
+* `npm run release`
+
+Not we need to run our release script using npm. Yarn breaks here.
 
 ### Maintainers
 

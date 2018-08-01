@@ -11,9 +11,13 @@
 
   @if (variable-exists(breakpoints)) {
     @each $bp-name, $bp-value in $breakpoints {
-      @media (min-width: $bp-value) {
-        @each $class, $value in $font-sizes {
-          .#{$bp-name}\:#{$class} { font-size: $value; }
+      $infix: breakpoint-infix($bp-name, $breakpoints);
+
+      @if(breakpoint-min($bp-name, $breakpoints) != null) {
+        @media (min-width: $bp-value) {
+          @each $class, $value in $font-sizes {
+            .#{$infix}#{$class} { font-size: $value; }
+          }
         }
       }
     }
@@ -54,14 +58,6 @@ h6 { @extend .f6; }
 .nowrap { white-space: nowrap; }
 .break-word { word-wrap: break-word; }
 
-.wrap-mobile {
-  word-wrap: break-word;
-  @media (--breakpoint-sm) {
-    white-space: nowrap;
-  }
-}
-
-
 // Lists
 .list-style-none { list-style: none; }
 .list-reset {
@@ -75,7 +71,7 @@ h6 { @extend .f6; }
   }
 }
 
-.highlight { background: yellow; }
+.highlight { background: $color-highlight; }
 
 .hidden,
 .forscreenreader {

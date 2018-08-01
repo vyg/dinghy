@@ -1,16 +1,28 @@
+@for $i from 0 through $padding-count {
+  .p#{$i} { padding: #{$i * 0.5}rem; }
+  .pt#{$i} { padding-top: #{$i * 0.5}rem; }
+  .pr#{$i} { padding-right: #{$i * 0.5}rem; }
+  .pb#{$i} { padding-bottom: #{$i * 0.5}rem; }
+  .pl#{$i} { padding-left: #{$i * 0.5}rem; }
+  .py#{$i} { padding-bottom: #{$i * 0.5}rem; padding-top: #{$i * 0.5}rem; }
+  .px#{$i} { padding-left: #{$i * 0.5}rem; padding-right: #{$i * 0.5}rem; }
+}
+
 @if (variable-exists(breakpoints)) {
   @each $bp-name, $bp-value in $breakpoints {
     $infix: breakpoint-infix($bp-name, $breakpoints);
 
-    @media (min-width: $bp-value) {
-      @for $i from 0 through $padding-count {
-        .#{$infix}p#{$i} { padding: #{$i * 0.5}rem; }
-        .#{$infix}pt#{$i} { padding-top: #{$i * 0.5}rem; }
-        .#{$infix}pr#{$i} { padding-right: #{$i * 0.5}rem; }
-        .#{$infix}pb#{$i} { padding-bottom: #{$i * 0.5}rem; }
-        .#{$infix}pl#{$i} { padding-left: #{$i * 0.5}rem; }
-        .#{$infix}py#{$i} { padding-bottom: #{$i * 0.5}rem; padding-top: #{$i * 0.5}rem; }
-        .#{$infix}px#{$i} { padding-left: #{$i * 0.5}rem; padding-right: #{$i * 0.5}rem; }
+    @if(breakpoint-min($bp-name, $breakpoints) != null) {
+      @media (min-width: $bp-value) {
+        @for $i from 0 through $padding-count {
+          .#{$infix}p#{$i} { padding: #{$i * 0.5}rem; }
+          .#{$infix}pt#{$i} { padding-top: #{$i * 0.5}rem; }
+          .#{$infix}pr#{$i} { padding-right: #{$i * 0.5}rem; }
+          .#{$infix}pb#{$i} { padding-bottom: #{$i * 0.5}rem; }
+          .#{$infix}pl#{$i} { padding-left: #{$i * 0.5}rem; }
+          .#{$infix}py#{$i} { padding-bottom: #{$i * 0.5}rem; padding-top: #{$i * 0.5}rem; }
+          .#{$infix}px#{$i} { padding-left: #{$i * 0.5}rem; padding-right: #{$i * 0.5}rem; }
+        }
       }
     }
   }
