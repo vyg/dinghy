@@ -2,7 +2,7 @@
     "name": "dinghy",
     "version": "0.0.8",
     "description": "Functional CSS framework",
-    "repository": "ohararyan/dinghy",
+    "repository": "vyg/dinghy",
     "license": "MIT",
     "author": {
         "name": "Ryan O'Hara",
@@ -12,7 +12,7 @@
     "main": "dist/dinghy.css",
     "keywords": [],
     "bugs": {
-        "url": "https://github.com/ohararyan/dinghy/issues"
+        "url": "https://github.com/vyg/dinghy/issues"
     },
     "engines": {
         "node": ">=4"
